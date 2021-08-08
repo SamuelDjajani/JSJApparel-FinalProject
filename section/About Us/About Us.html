@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get to know us more!</title>
+<link rel="stylesheet" href="../../css/mainstyle.css" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+<script src="../../js/script.js"></script>
+</head>
+<body onload="getData(0)">
+<div>
+	<div class="topshelf">
+		
+			<span>33-44 43rd Avenue, </br>Elmhurst,</br> NewYork, 11373</span>
+		
+		
+			<h1>JSJ Apparel</h1>
+		
+		<div class="topshelfphoto">
+			<img src="../../asset/images/—Pngtree—barcode_6020209.png" alt="barcode" width="50" height="50">
+			<img src="../../asset/images/—Pngtree—barcode_6020209.png" alt="barcode" width="50" height="50">
+			<img src="../../asset/images/—Pngtree—barcode_6020209.png" alt="barcode" width="50" height="50">
+	    </div>
+  </div>
+</div>
+
+
+<header><nav><div class="navlink">
+	<ul>
+	<li><a href="../homepage/index.html"><b>Home</b></a></li>
+	<li><a href="../shop/shop.html"><b>Shop</b></a></li>
+    <li><a href="../best seller/BS section.html"><b>BestSeller</b></a></li>
+	<li><a href="About Us.html"><b>About Us</b></a></li>
+	</ul>
+</div></nav></header>
+
+<div class="Autop"><h2>Slight details about us!</h2>
+  <div class="autop-text-container">
+    <div class="autop-text">
+      <span>We are a brand new clothing brand apparel company that focuses on fashion, design, quality, and the sustainable of the fabric. We launch this company in 2017, starting from a small warehouse at Seoul, South Korea. We're collecting talented yet professional young designers who has the same purposes as ours, to connect the whole world at the clothing industry through our passion in this field. We are where we are right now till today, remains solid yet improvising and spreading across districs to share what others have already felt for our apparel/brand clothing.</span>
+      </div>
+  </div>
+</div>
+
+<div class=aboutUsSpace></div>
+
+<div><h2>FAQ</h2></div>
+<div class="aboutUsMain">
+      <div id="commentData" class="commentContainer"></div>
+    </div>
+    <section>
+      <div class="commentBoxContainer">
+        <div class="row">
+          <div class="col-6">
+            <div class="comment">
+              <p v-for="items in item" v-text="items"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <input
+              id="username"
+              type="text"
+              class="input"
+              placeholder="Write a username (maks 50 characters)"
+			  maxlength="50"
+            ></input>
+            <input
+              id="comment"
+              type="text"
+              class="input"
+              placeholder="Write a comment (maks 256 characters)"
+			  maxlength="256"
+            ></input>
+            <button
+              id="button"
+              class="primaryContained float-right"
+              type="submit"
+            >
+              Add Comment
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+</body>
+</html>
